@@ -1,0 +1,28 @@
+website for a company
+-made up or real, real needs permission
+
+must have:
+-home page
+-at least two jQuery effects
+-check for features with Modernizr and provide fallback content for legacy browsers
+-real content is needed, no lorem
+
+4 of 6:
+-animated bar chart
+-interactive map
+-interactive image gallery
+-interactive data visualization
+-at least one of the html5 video and/or audio tags
+-2 uses of the html5 canvas tag
+
+Design will count
+-must look professional
+
+Follow the rubric
+
+You will be responsible for the artwork
+-DO create it yourself
+-DO use royalty free images and video
+-DO NOT use anything that you do not own the rights to
+
+wilson_cory_WIA_the_project.zip

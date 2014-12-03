@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<title>HTML5 VideoExample</title>
+
+	</head>
+
+	<body>
+    <!-- Attributes available to the <video> element
+					Controls: Display to the play/stop buttons?
+					Poster:The value can be a path to an image,
+								 that will serve as the display of the video before it is played.
+					AutoPlay: Immediately play the video when the page is loaded?
+					Width/Height
+					Src: The path to the video file.
+							 Better to use the <source> child element instead for this task.
+		-->
+
+		<video src="video/video.mp4" width="400" height="225" controls poster="images/posterImage.jpg">
+			Video is not supported in this browser
+		</video>
+		<br/>
+		<!--to support all kinds of brosers-->
+		<video width="400" controls autoplay>
+			<!--<source src="video/video.mp4" type="video/mp4" />
+			<source src="video/video.ogv" type="video/ogv" />-->
+			<embed src="video/flash-video.swf" width="400" height="225" allowscriptaccess="always" allowfullscreen="true"></embed>
+		</video>
+	</body>
+
+</html>
