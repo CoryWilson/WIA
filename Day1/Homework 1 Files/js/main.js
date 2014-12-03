@@ -198,18 +198,6 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 //Draw images here
 
-  var theCanvas6 = document.getElementById('canvas6');
-
-  if(theCanvas6){
-    var ctx6 = theCanvas6.getContext("2d");
-    if(ctx6){
-      var img = new Image();
-      img.onload = function(){
-        ctx6.drawImage(img,0,0);
-      };
-      img.src = "image/logo.png";
-    }
-  }
 
 
 /*******************************************
@@ -229,14 +217,21 @@ You must use at least 3 different methods.
   if(theCanvas7){
     var ctx7 = theCanvas7.getContext("2d");
     if(ctx7){
-      ctx7.fillStyle = "yellow";
-      ctx7.fillRect(0,120,300,30);
+      ctx7.fillStyle = "rgba(163, 232, 255, 0.8)";
+      ctx7.save();
+      ctx7.fillRect(0,0,300,300);
 
-      var degrees7 = 360;
-      var radians7 = (Math.PI/180)*degrees7;
+      ctx7.fillStyle = "rgba(255, 224, 133, 1)";
+      ctx7.save();
+      var degrees3 = 360;
+      var radians3 = (Math.PI/180)*degrees3;
       ctx7.beginPath();
-      ctx7.arc(50,50,30,0,radians7);
+      ctx7.arc(5,5,50,0,radians3,true);
       ctx7.fill();
+
+      ctx7.fillStyle = "rgba(212, 255, 163, 0.8)";
+      ctx7.save();
+      ctx7.fillRect(0,100,300,100);
     }
   }
 
