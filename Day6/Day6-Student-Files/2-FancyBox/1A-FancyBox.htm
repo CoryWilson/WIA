@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FancyBox Example</title>
+	<script type="text/javascript"  src="includes/jquery-1.10.1.min.js" ></script>
+	<script type="text/javascript" src="includes/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox.css" media="screen" />
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.fancybox').fancybox();
+		});
+	</script>
+
+	</head>
+	<body>
+		<h1>Lightbox</h1>
+
+    <p>Click on a picture, show it in a fancy box!</p>
+
+		<a class="fancybox" rel="group" href="img/1-Large.jpg" title="My First Caption">
+			<img src="img/1-Small.jpg" alt="Image 1" width="150" height="150">
+ 		</a>
+		<a class="fancybox" rel="group" href="img/2-Large.jpg" title="My Second Caption">
+			<img src="img/2-Small.jpg" alt="Image 2" width="150" height="150">
+		</a>
+
+
+	</body>
+</html>
