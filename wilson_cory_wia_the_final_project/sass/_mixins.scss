@@ -1,0 +1,10 @@
+@mixin map-style {
+  overflow: hidden;
+  background: {
+    color: $water;
+    image: url(../img/map.svg);
+    repeat: no-repeat;
+    position: top left;
+  }
+  position: relative;
+}

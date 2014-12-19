@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SVG Animations</title>
+
+	</head>
+	<body>
+		<h1>SVG Animations</h1>
+		<p>This example will show how to animation properties of an SVG.</p>
+
+   	<svg width="500" height="500">
+
+			<circle cx="0" cy="50" r="30" fill="blue" stroke="black" stroke-width="1">
+				<animate attributeName="cx" from="0" to="500" dur="5s" repeatCount="indefinite" />
+				<animate id="grow" begin="0s" attributeName="r" from="10" to="50" dur="1s" repeatCount="1" />
+				<animate id="shrink" begin="grow.end" attributeName="r" from="50" to="10" dur="1s" repeatCount="1" fill="freeze" />
+			</circle>
+
+			<circle cx="0" cy="100" r="30" fill="red" stroke="black" stroke-width="1">
+				<animate attributeName="cx" from="0" to="500" dur="5s" repeatCount="indefinite" />
+				<animate id="pulse" attributeName="r" values="30;10;30" dur="1s" repeatCount="indefinite" />
+			</circle>
+
+		</svg>
+
+
+	</body>
+</html>

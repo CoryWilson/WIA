@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animating Motion</title>
+
+	</head>
+	<body>
+		<h1>Animating Motion</h1>
+		<p>This example will show how to animate motion of an SVG.</p>
+
+    <svg width="300" height="200" id="animatingsvg">
+			<!--
+				The following commands are available for path data:
+					 M = moveto
+					 L = lineto
+					 Z - closepath
+			-->
+			<path
+				d="M125 20 L50 100 L200 100 Z"
+				style="fill:none;stroke:lightgrey;stroke-width:2;"
+				id="theMotionPath"
+			/>
+
+			<circle cx="" cy="" r="5" fill="red">
+				<animateMotion dur="6s" repeatCount="indefinite">
+					<mpath xlink:href="#theMotionPath" />
+				</animateMotion>
+			</circle>
+		</svg>
+
+		<button onclick="document.getElementById('animatingsvg').pauseAnimations()">Pause</button>
+		<button onclick="document.getElementById('animatingsvg').unpauseAnimations()">Unpause</button>
+		<button onclick="document.getElementById('animatingsvg').setCurrentTime(0)">Restart</button>
+		<button onclick="document.getElementById('animatingsvg').setCurrentTime(3)">Middle</button>
+
+	</body>
+</html>

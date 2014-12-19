@@ -1,0 +1,25 @@
+/***** Project Variables *****/
+
+/***** Typography Variables *****/
+$heading-font : 'coquette',serif;
+$main-font    : 'proxima-nova',sans-serif;
+
+/***** Color Variables *****/
+$darkPrimaryColor   : #689F38;
+$primaryColor       : #8BC34A;
+$lightPrimaryColor  : #DCEDC8;
+$textPrimaryColor   : #FFFFFF;
+$accentColor        : #9E9E9E;
+$primaryTextColor   : #212121;
+$secondaryTextColor : #727272;
+$dividerColor       : #B6B6B6;
+
+$water : #77C6E7;
+
+@import
+"reset",
+"mixins",
+"base",
+"layout",
+"typography",
+"color";
